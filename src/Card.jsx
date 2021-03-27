@@ -9,10 +9,12 @@ const ReadMore = ({ children }) => {
     };
     return (
         <p className="text">
-            {isReadMore ? text.slice(0, 180) : text}
+            {isReadMore ? text.slice(0, 180) : text}    
+            {/* use of conditional ternary operator     */}
             <div onClick={toggleReadMore} className="read-or-hide">
                 {isReadMore ? <button class="btn btn-primary">Read More</button> : <button class="btn btn-primary">Read Less</button>}
-            </div>
+                {/* use of conditional ternary operator */}
+            </div>                                                            
         </p>
     );
 };
